@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disability Support App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Disability Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#requestSupport">Request Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offerSupport">Offer Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Request Support Section -->
+            <div class="col-md-6" id="requestSupport">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Request Support</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="supportType" class="form-label">What kind of support do you need?</label>
+                                <select class="form-select" id="supportType">
+                                    <option selected>Select an option...</option>
+                                    <option value="1">Mobility Assistance</option>
+                                    <option value="2">Communication Support</option>
+                                    <option value="3">Daily Living Help</option>
+                                    <option value="4">Medical Aid</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="supportDetails" class="form-label">Details of Support Needed</label>
+                                <textarea class="form-control" id="supportDetails" rows="3" placeholder="Describe your specific needs"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactInfo" class="form-label">Your Contact Information</label>
+                                <input type="text" class="form-control" id="contactInfo" placeholder="Email or phone number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Support Section -->
+            <div class="col-md-6" id="offerSupport">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Offer Support</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="supportOfferType" class="form-label">What type of support can you offer?</label>
+                                <select class="form-select" id="supportOfferType">
+                                    <option selected>Select an option...</option>
+                                    <option value="1">Mobility Assistance</option>
+                                    <option value="2">Communication Support</option>
+                                    <option value="3">Daily Living Help</option>
+                                    <option value="4">Medical Aid</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="offerDetails" class="form-label">Details of Support You Can Offer</label>
+                                <textarea class="form-control" id="offerDetails" rows="3" placeholder="Describe how you can assist"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="offerContactInfo" class="form-label">Your Contact Information</label>
+                                <input type="text" class="form-control" id="offerContactInfo" placeholder="Email or phone number">
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit Offer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
